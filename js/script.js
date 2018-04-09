@@ -4,8 +4,8 @@ $(document).ready(function(){
     var nextImg = currentImg.next();
 
     if(nextImg.length){
-      currentImg.removeClass('active').css('z-index', -10);
-      nextImg.addClass('active').css('z-index', 10);
+      currentImg.removeClass('active').hide();
+      nextImg.addClass('active').show();
     }
   });
 
@@ -14,8 +14,17 @@ $(document).ready(function(){
     var prevImg = currentImg.prev();
 
     if(prevImg.length){
-      currentImg.removeClass('active').css('z-index', -10);
-      prevImg.addClass('active').css('z-index', 10);
+      currentImg.removeClass('active').hide();
+      prevImg.addClass('active').show();
+    }
+  });
+  $('.next').on('click', function(){
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+
+    if (currentImg.next == null) {
+      currentImg.removeClass('active').hide();
+      $('.slider-inner:first-child').addClass('active').show();
     }
   });
 });

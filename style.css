@@ -44,14 +44,17 @@ header h1 {
   float: left;
   width: 100%;
   height: auto;
+  padding: 20px 0;
 }
 .slider-inner img {
-  display: none;
-  width: 50%;
+  width: 30%;
   height: auto;
-  margin-left: 25%;
+  margin-left: 3%;
 }
-.slider-inner img.active {
+.slider-inner div {
+  display: none;
+}
+.slider-inner div.active {
   display: inline-block;
 }
 /*.slider-inner img:first-child,
@@ -138,14 +141,13 @@ footer h2 {
   font-size: 1.25em;
 }
 footer ul {
-  padding: 26.9%;
+  padding: 0 26.9%;
 }
 footer ul li {
   display: inline;
   padding: 2.5%;
 }
 footer img {
-  display: inline;
   width: 5%;
   margin: 0;
   padding: 0;
