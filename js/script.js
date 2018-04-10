@@ -3,7 +3,7 @@ $(document).ready(function(){
   var lastDiv = $('.slider-inner div:last-child')
   var currentDiv = startDiv;
   var count = 1;
-  var totalDivs = 3;
+  var totalDivs = $('.slider-inner > div').length;
 
   $('.next').on('click', function(){
     if (count == totalDivs) {
